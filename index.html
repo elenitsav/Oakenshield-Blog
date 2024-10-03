@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oakenshield Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Oakenshield Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#publications">Our Publications</a></li>
+                <li><a href="#international">Addressing Other Nations</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to Oakenshield</h2>
+        <p>Explore our nation's latest stories, news, and international relations.</p>
+        <button onclick="scrollToSection('publications')">Explore Now</button>
+    </section>
+
+    <section id="publications">
+        <h2>Our Publications</h2>
+        <div class="post">
+            <h3>Post Title 1</h3>
+            <p>Short description of the publication. Click to read more.</p>
+        </div>
+        <div class="post">
+            <h3>Post Title 2</h3>
+            <p>Short description of the publication. Click to read more.</p>
+        </div>
+        <!-- Add more posts as needed -->
+    </section>
+
+    <section id="international">
+        <h2>Addressing Other Nations</h2>
+        <p>Our stance on global relations and messages to other nations.</p>
+        <button onclick="showMessage()">Click to See Message</button>
+        <div id="message" class="hidden">"Oakenshield extends peace and prosperity to all nations. Let's work together for a brighter future!"</div>
+    </section>
+
+    <footer>
+        <p>© 2024 Oakenshield Nation Blog</p>
+    </footer>
+</body>
+</html>
