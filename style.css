@@ -163,7 +163,7 @@ a:active {
 }
 
 #hero2 {
-    background-image: url('papyrus.png.');
+    background-image: url('papyrus.png');
     background-size: cover;
     background-position: center;
     padding:320px 20px;
