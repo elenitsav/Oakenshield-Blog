@@ -137,3 +137,54 @@ footer {
 #message.show {
     opacity: 1; /* Fade-in effect for the message */
 }
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#hero2 {
+    background-image: url('papyrus.png.');
+    background-size: cover;
+    background-position: center;
+    padding:320px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+    position: relative;
+}
+
+#hero2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+    z-index: 1; /* Place overlay behind text */
+}
+
+#hero2 h2, #hero2 p, #hero2 button {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Position text above the overlay */
+    color: #d3d3d3; /* Lighter color for readability */
+}
